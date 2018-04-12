@@ -1,0 +1,19 @@
+#------------------------------------
+	# Team
+#------------------------------------
+
+Caddis / hello@caddis.co / twitter.com/caddisint
+Wee / hello@weepower.com / twitter.com/weecss
+
+
+#------------------------------------
+	# Components
+#------------------------------------
+
+Standards: ARIA, CSS3, HTML5, Schema
+Framework: Wee
+
+\ \        /
+ \ \  \   / _ \  _ \
+  \ \  \ /  __/  __/
+   \_/\_/ \___|\___|
