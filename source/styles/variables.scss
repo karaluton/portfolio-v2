@@ -1,10 +1,74 @@
-// Override core variables or add custom values here
-// Default settings available at https://www.weepower.com/style/variables
-
-// $primary: red;
-
 @import '~wee-core/styles/variables.scss';
 
-// Assign variables that need to reference default variables below
+@font-face {
+    font-family: 'Currency';
+    font-style: normal;
+    src: url('../fonts/CURRENCY_REG.ttf');
+}
 
-// $liMarginBottom: $blockMarginBottom;
+//------------------------------------*\
+//  # Colors
+//------------------------------------*/
+
+$primary: #f2cccf;
+$lightGray: #f8f8f8;
+$darkGray: #484848;
+$black: #1c1b20;
+$white: #f5f5f5;
+
+//------------------------------------*\
+//  # Base
+//------------------------------------*/
+
+$baseColor: $black;
+$baseFont: 'Roboto', sans-serif;
+$baseFontSize: 1.7rem;
+$baseFontWeight: normal;
+
+//------------------------------------*\
+//  # Logo
+//------------------------------------*/
+
+$logoFont: 'Currency', sans-serif;
+
+//------------------------------------*\
+//  # Paragraphs
+//------------------------------------*/
+
+$paragraphColor: $baseColor;
+$paragraphFontWeight: $baseFontWeight;
+$paragraphLineHeight: 1.65em;
+
+//------------------------------------*\
+//  # Headings
+//------------------------------------*/
+
+$headingFont: 'Montserrat', sans-serif;
+$headingFontWeight: 700;
+$headingLineHeight: 1.2em;
+
+$headingMarginBottom: 2rem;
+
+$h1: 4.2rem; // font sizes
+$h2: 3.4rem;
+$h3: 3.2rem;
+$h4: 3rem;
+$h5: 2.4rem;
+$h6: 1.5rem;
+
+//------------------------------------*\
+//  # Icons
+//------------------------------------*/
+
+$iconFont: icomoon;
+$iconSpinner: '\e97a';
+$iconPlus: '\ea0a';
+$iconDownArrow: '\ea43';
+$iconSearch: '\e986';
+
+// Socials
+$iconFacebook: '\ea90';
+$iconInstagram: '\ea92';
+$iconTwitter: '\ea96';
+$iconGithub: '\eab0';
+$iconLinkedIn: '\eaca';

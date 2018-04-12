@@ -1,0 +1,81 @@
+.hero {
+    // background-image: url('.assets/images/hero.jpg') no-repeat center;
+    height: 96vh;
+    position: relative;
+    width: 100%;
+    &__image-wrapper {
+        background: $primary;
+        clip-path: polygon(0 0, 100% 0, 100% 82%, 0 96%);
+        // TODO: see if needed
+        // webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 96%);
+        height: 100vh;
+        position: relative;
+        &::after {
+            @include absolute(0, 0);
+
+            background: $primary;
+            content: ' ';
+            height: 100%;
+            opacity: 0.7;
+            width: 100%;
+        }
+    }
+    &__image {
+        display: none;
+    }
+    &__content {
+        @include absolute($top: 50%, $left: 50%);
+
+        text-align: center;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        z-index: 2;
+    }
+    &__logo {
+        color: lighten($primary, 10%);
+        font-family: $logoFont;
+        font-size: 7rem;
+    }
+    &__headline {
+        color: $darkGray;
+        font-family: $headingFont;
+        font-size: 3.8rem;
+        font-weight: $headingFontWeight;
+        margin: 3rem 0;
+    }
+}
+
+@tablet {
+    .hero {
+        &__image {
+            display: block;
+            margin-left: 50%;
+            max-width: none;
+            min-height: 100%;
+            min-width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__content {
+            width: 90%;
+        }
+        &__logo {
+            color: $primary;
+        }
+        &__headline {
+            margin: 5rem 0;
+        }
+    }
+}
+
+@desktop {
+    .hero {
+        &__content {
+            width: 70%;
+        }
+        &__headline {
+            font-size: 5.7rem;
+        }
+    }
+}

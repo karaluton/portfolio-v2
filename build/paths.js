@@ -10,25 +10,25 @@ const assetsPath = `${rootPath}/${config.paths.assets}`;
 const modulesPath = `${projectPath}/node_modules`;
 
 module.exports = {
-	project: projectPath,
-	packageJson: packageJsonPath,
-	wee: weeJsonPath,
-	temp: `${buildPath}/temp`,
-	build: buildPath,
-	root: rootPath,
-	source: sourcePath,
-	assets: assetsPath,
-	styles: `${sourcePath}/styles`,
-	scripts: `${sourcePath}/scripts`,
-	components: `${sourcePath}/components`,
-	images: `${sourcePath}/images`,
-	fonts: `${sourcePath}/fonts`,
-	output: {
-		styles: `${assetsPath}/styles`,
-		scripts: `${assetsPath}/scripts`,
-		images: `${assetsPath}/images`,
-		fonts: `${assetsPath}/fonts`
-	},
-	nodeModules: modulesPath,
-	weeCore: `${modulesPath}/wee-core`
+    project: projectPath,
+    packageJson: packageJsonPath,
+    wee: weeJsonPath,
+    temp: `${buildPath}/temp`,
+    build: buildPath,
+    root: rootPath,
+    source: sourcePath,
+    assets: assetsPath,
+    styles: `${sourcePath}/styles`,
+    scripts: `${sourcePath}/scripts`,
+    components: `${sourcePath}/components`,
+    images: `${sourcePath}/images`,
+    fonts: `${sourcePath}/fonts`,
+    output: {
+        styles: `${assetsPath}/styles`,
+        scripts: `${assetsPath}/scripts`,
+        images: `${assetsPath}/images`,
+        fonts: `${assetsPath}/fonts`
+    },
+    nodeModules: modulesPath,
+    weeCore: `${modulesPath}/wee-core`
 };
