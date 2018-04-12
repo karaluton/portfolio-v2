@@ -1,10 +1,10 @@
+import $router from 'wee-routes';
 import './bootstrap';
+import nav from '../components/header';
 
-// Begin your application here
-// Example:
-
-// import $router from 'wee-routes';
-
-// $router.map([
-//     { path: '/', init() { 'Hello World' } }
-// ]).run();
+$router.map([
+    {
+        path: '/',
+        handler: [nav],
+    },
+]).run();
