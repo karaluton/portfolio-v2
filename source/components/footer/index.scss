@@ -19,22 +19,22 @@
         }
         &.-twitter {
             &::after {
-                @include icon($iconTwitter, 3rem);
+                @include icon($iconTwitter, 2rem);
             }
         }
         &.-instagram {
             &::after {
-                @include icon($iconInstagram, 3rem);
+                @include icon($iconInstagram, 2rem);
             }
         }
         &.-linkedin {
             &::after {
-                @include icon($iconLinkedIn, 3rem);
+                @include icon($iconLinkedIn, 2rem);
             }
         }
         &.-github {
             &::after {
-                @include icon($iconGithub, 3rem);
+                @include icon($iconGithub, 2rem);
             }
         }
     }

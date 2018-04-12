@@ -25,7 +25,6 @@ function fixNav() {
 export default new RouteHandler({
     init() {
         fixNav();
-
         console.log('%c Oh, hey there!', 'color: #f2cccf');
         console.log('%c Interested in what I do?', 'color: #f2cccf');
         console.log('%c Email me at karaluton@gmail.com 👍🏻', 'color: #f2cccf');

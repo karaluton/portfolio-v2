@@ -13,14 +13,28 @@
         top: 0;
         width: 100%;
         z-index: 2;
+        .header__logo {
+            max-width: 50rem;
+        }
         .header__link {
             &:hover {
-                color: $white;
+                color: $black;
             }
         }
     }
     &__nav {
-        @include flexContainer($justify: space-between);
+        @include flexContainer();
+    }
+    &__logo {
+        color: $darkGray;
+        font-family: $logoFont;
+        font-size: 3rem;
+        max-width: 0;
+        overflow: hidden;
+        transition: all 0.25s;
+        &:hover {
+            color: $darkGray;
+        }
     }
     &__link {
         color: $darkGray;
@@ -32,6 +46,8 @@
         }
     }
     &__link-wrapper {
+        @include flexContainer($justify: center, $align: center);
+        flex-grow: 1;
         list-style: none;
     }
 }
