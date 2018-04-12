@@ -1,0 +1,59 @@
+.about-me {
+    text-align: center;
+    &__content {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    &__container {
+        margin-top: 2rem;
+    }
+    &__item {
+        margin-bottom: 3rem;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__heading {
+        font-family: $headingFont;
+        font-size: 2.4rem;
+        line-height: $headingLineHeight;
+        margin: 2rem 0;
+    }
+}
+
+@tablet {
+    .about-me {
+        &__content {
+            padding-bottom: 5rem;
+            padding-top: 5rem;
+        }
+        &__container {
+            @include flexContainer();
+
+            margin-top: 5rem;
+        }
+        &__item {
+            margin: 0 2rem;
+            width: 33.3%;
+        }
+        &__heading {
+            margin: 1rem 0;
+        }
+    }
+}
+
+@desktop {
+    .about-me {
+        &__content {
+            padding-bottom: 7rem;
+            padding-top: 7rem;
+        }
+        &__image {
+            height: 9rem;
+            width: 10rem;
+        }
+        &__heading {
+            margin: 2rem 0;
+        }
+    }
+}
