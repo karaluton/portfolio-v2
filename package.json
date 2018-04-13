@@ -1,8 +1,8 @@
 {
-  "name": "wee",
-  "version": "4.4.1",
-  "description": "Blueprint for modern web development",
-  "homepage": "https://www.weepower.com",
+  "name": "Kara Luton | Front End Developer",
+  "version": "2.0",
+  "description": "Front end developer. Retired ballerina. Nashville Tech Ladies city organizer.",
+  "homepage": "https://www.karaluton.com",
   "license": "Apache-2.0",
   "moduleRoots": "node_modules/wee-core/scripts",
   "keywords": [
@@ -10,8 +10,7 @@
     "framework",
     "javascript"
   ],
-  "repository": "weepower/wee",
-  "bugs": "https://github.com/weepower/wee/issues",
+  "repository": "karaluton/portfolio-v2",
   "browserslist": [
     "last 2 versions",
     "ie > 9"
@@ -83,6 +82,7 @@
   "dependencies": {
     "es6-promise": "^4.1.1",
     "path-to-regexp": "^1.7.0",
+    "smoothscroll": "^0.4.0",
     "vue": "^2.0.1",
     "wee-core": "^2.1.11"
   }
