@@ -1,8 +1,8 @@
 {
-  "name": "Kara Luton | Front End Developer",
-  "version": "2.0",
-  "description": "Front end developer. Retired ballerina. Nashville Tech Ladies city organizer.",
-  "homepage": "https://www.karaluton.com",
+  "name": "wee",
+  "version": "4.4.1",
+  "description": "Blueprint for modern web development",
+  "homepage": "https://www.weepower.com",
   "license": "Apache-2.0",
   "moduleRoots": "node_modules/wee-core/scripts",
   "keywords": [
@@ -10,7 +10,8 @@
     "framework",
     "javascript"
   ],
-  "repository": "karaluton/portfolio-v2",
+  "repository": "weepower/wee",
+  "bugs": "https://github.com/weepower/wee/issues",
   "browserslist": [
     "last 2 versions",
     "ie > 9"
@@ -82,6 +83,7 @@
   "dependencies": {
     "es6-promise": "^4.1.1",
     "path-to-regexp": "^1.7.0",
+    "shifty": "^2.3.1",
     "smoothscroll": "^0.4.0",
     "vue": "^2.0.1",
     "wee-core": "^2.1.11"

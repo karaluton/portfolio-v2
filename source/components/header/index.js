@@ -8,7 +8,7 @@ import { RouteHandler } from 'wee-routes';
 const $win = $(_win);
 const $body = $(_body);
 
-function fixNav() {
+function fixHeader() {
     let topOfNav = $nav.offset().top;
 
     $events.on($win, 'scroll.fixnav', () => {
@@ -24,7 +24,7 @@ function fixNav() {
 
 export default new RouteHandler({
     init() {
-        fixNav();
+        fixHeader();
         console.log('%c Oh, hey there!', 'color: #f2cccf');
         console.log('%c Interested in what I do?', 'color: #f2cccf');
         console.log('%c Email me at karaluton@gmail.com 👍🏻', 'color: #f2cccf');

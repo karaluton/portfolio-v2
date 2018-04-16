@@ -25,92 +25,94 @@
     <meta property="og:image" content="https://www.karaluton.com/assets/images/share.png" itemprop="image">
 </head>
 <body>
-    <div class="hero">
-        <div class="hero__image-wrapper">
-            <img src="/assets/images/hero/hero-desktop-1x.jpg"
-                srcset="/assets/images/hero/hero-desktop-2x.jpg 2x, /assets/images/hero/hero-tablet-2x.jpg 2x, /assets/images/hero/hero-mobile-2x.jpg 2x"
-                alt="Laptop on desk" class="hero__image">
+    <div class="js-main">
+        <div class="hero">
+            <div class="hero__image-wrapper">
+                <img src="/assets/images/hero/hero-desktop-1x.jpg"
+                    srcset="/assets/images/hero/hero-desktop-2x.jpg 2x, /assets/images/hero/hero-tablet-2x.jpg 2x, /assets/images/hero/hero-mobile-2x.jpg 2x"
+                    alt="Laptop on desk" class="hero__image">
+            </div>
+            <div class="hero__content">
+                <span class="hero__logo">KL</span>
+                <h1 class="hero__headline">Hi, I'm Kara.<br>I help build the internet.</h1>
+                <a href="#contact" class="button -colored hero__button">Want to work together?</a>
+            </div>
         </div>
-        <div class="hero__content">
-            <span class="hero__logo">KL</span>
-            <h1 class="hero__headline">Hi, I'm Kara.<br>I help build the internet.</h1>
-            <a href="#contact" class="button -colored hero__button">Want to work together?</a>
-        </div>
-    </div>
-    <nav class="header js-header">
-        <ul class="container header__nav">
-            <li class="header__logo"><a href="#" class="header__logo">KL</a></li>
-            <li class="header__link-wrapper"><a href="#about" class="header__link">About</a></li>
-            <li class="header__link-wrapper"><a href="#projects" class="header__link">Projects</a></li>
-            <li class="header__link-wrapper"><a href="#contact" class="header__link">Contact</a></li>
-            <li class="header__link-wrapper"><a href="https://www.medium.com/@karaluton" class="header__link" target="_blank">Blog</a></li>
-        </ul>
-    </nav>
-    <div class="container about-me" id="about-me">
-        <div class="about-me__content">
-            <h2 class="about-me__title">A little bit about me</h2>
-            <div class="about-me__container">
-                <div class="about-me__item">
-                    <img src="./assets/images/emojis/dancing-girl.png" alt="Dancing girl emoji" class="about-me__image">
-                    <div class="about-me__heading">Retired Ballerina</div>
-                    <p class="about-me__subheading">I grew up doing ballet until I was 18. Ballet has taught me a lot of things that I now use in my career like how to learn quickly and pay attention to the little details.</p>
-                </div>
-                <div class="about-me__item">
-                    <img src="./assets/images/emojis/dog.png" alt="Dog emoji" class="about-me__image">
-                    <div class="about-me__heading">Dog Mom</div>
-                    <p class="about-me__subheading">I have a two-year-old golden retriever mix who I love taking on walks and to the dog park. I'm a huge animal lover, but dogs have a special place in my heart.</p>
-                </div>
-                <div class="about-me__item">
-                    <img src="./assets/images/emojis/computer.png" alt="Computer emoji" class="about-me__image">
-                    <div class="about-me__heading">Leader</div>
-                    <p class="about-me__subheading">I want to inspire other women to pursue a career in technology. While still in code school, I co-founded the Nashville chapter of Tech Ladies - a quarterly meetup for women in all areas of technology.</p>
+        <nav class="header js-header">
+            <ul class="container header__nav">
+                <li class="header__logo"><a href="#" class="header__logo">KL</a></li>
+                <li class="header__link-wrapper"><a href="#about" class="header__link js-anchor">About</a></li>
+                <li class="header__link-wrapper"><a href="#projects" class="header__link js-anchor">Projects</a></li>
+                <li class="header__link-wrapper"><a href="#contact" class="header__link js-anchor">Contact</a></li>
+                <li class="header__link-wrapper"><a href="https://www.medium.com/@karaluton" class="header__link" target="_blank">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="container about-me" id="about">
+            <div class="about-me__content">
+                <h2 class="about-me__title">A little bit about me</h2>
+                <div class="about-me__container">
+                    <div class="about-me__item">
+                        <img src="./assets/images/emojis/dancing-girl.png" alt="Dancing girl emoji" class="about-me__image">
+                        <div class="about-me__heading">Retired Ballerina</div>
+                        <p class="about-me__subheading">I grew up doing ballet until I was 18. Ballet has taught me a lot of things that I now use in my career like how to learn quickly and pay attention to the little details.</p>
+                    </div>
+                    <div class="about-me__item">
+                        <img src="./assets/images/emojis/dog.png" alt="Dog emoji" class="about-me__image">
+                        <div class="about-me__heading">Dog Mom</div>
+                        <p class="about-me__subheading">I have a two-year-old golden retriever mix who I love taking on walks and to the dog park. I'm a huge animal lover, but dogs have a special place in my heart.</p>
+                    </div>
+                    <div class="about-me__item">
+                        <img src="./assets/images/emojis/computer.png" alt="Computer emoji" class="about-me__image">
+                        <div class="about-me__heading">Leader</div>
+                        <p class="about-me__subheading">I want to inspire other women to pursue a career in technology. While still in code school, I co-founded the Nashville chapter of Tech Ladies - a quarterly meetup for women in all areas of technology.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container projects" id="projects">
-        <h2 class="projects__title">My work</h2>
-        <p class="projects__subheading">Want to know more? <a href="mailto:karaluton@gmail.com" class="projects__link">Email me</a>.</p>
-        <div class="projects__container js-projects">
-            <div class="projects__item">
-                <div class="projects__image-wrapper">
-                   <img src="./assets/images/projects/casamba.png" alt="Casamba">
+        <div class="container projects" id="projects">
+            <h2 class="projects__title">My work</h2>
+            <p class="projects__subheading">Want to know more? <a href="mailto:karaluton@gmail.com" class="projects__link">Email me</a>.</p>
+            <div class="projects__container js-projects">
+                <div class="projects__item">
+                    <div class="projects__image-wrapper">
+                       <img src="./assets/images/projects/casamba.png" alt="Casamba">
+                    </div>
+                    <div class="projects__content">
+                        <div class="projects__heading">Casamba</div>
+                        <div class="projects__languages">Craft CMS, Wee</div>
+                        <p class="projects__description">Casamba helps solve software and automation problems in the post-acute healthcare space.</p>
+                        <a href="https://www.casamba.net" class="button -colored projects__button" target="_blank">Visit website</a>
+                    </div>
                 </div>
-                <div class="projects__content">
-                    <div class="projects__heading">Casamba</div>
-                    <div class="projects__languages">Craft CMS, Wee</div>
-                    <p class="projects__description">Casamba helps solve software and automation problems in the post-acute healthcare space.</p>
-                    <a href="https://www.casamba.net" class="button -colored projects__button" target="_blank">Visit website</a>
-                </div>
-            </div>
-            <div class="projects__item">
-                <div class="projects__image-wrapper">
-                   <img src="./assets/images/projects/playcore.png" alt="PlayCore">
-                </div>
-                <div class="projects__content">
-                    <div class="projects__heading">PlayCore</div>
-                    <div class="projects__languages">Craft CMS, Wee</div>
-                    <p class="projects__description">PlayCore helps build stronger communities around the world by advancing play and recreation through research, education and partnerships.</p>
-                    <a href="https://www.playcore.com" class="button -colored projects__button" target="_blank">Visit website</a>
+                <div class="projects__item">
+                    <div class="projects__image-wrapper">
+                       <img src="./assets/images/projects/playcore.png" alt="PlayCore">
+                    </div>
+                    <div class="projects__content">
+                        <div class="projects__heading">PlayCore</div>
+                        <div class="projects__languages">Craft CMS, Wee</div>
+                        <p class="projects__description">PlayCore helps build stronger communities around the world by advancing play and recreation through research, education and partnerships.</p>
+                        <a href="https://www.playcore.com" class="button -colored projects__button" target="_blank">Visit website</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="work-together" id="contact">
-        <div class="work-together__content">
-            <h2 class="work-together__heading">Have a question?</h2>
-            <p class="work-together__subheading">Feel free to reach out. Bonus points if you include a cute dog photo.</p>
-            <a href="mailto:karaluton@gmail.com" class="button work-together__button">Email me</a>
+        <div class="work-together" id="contact">
+            <div class="work-together__content">
+                <h2 class="work-together__heading">Have a question?</h2>
+                <p class="work-together__subheading">Feel free to reach out. Bonus points if you include a cute dog photo.</p>
+                <a href="mailto:karaluton@gmail.com" class="button work-together__button">Email me</a>
+            </div>
         </div>
+        <footer class="footer" role="contentinfo" data-ref="footer">
+            <div class="footer__socials">
+                <a href="https://twitter.com/karaluton" class="footer__link -twitter" target="_blank"></a>
+                <a href="https://instagram.com/karaluton" class="footer__link -instagram" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/karaluton" class="footer__link -linkedin" target="_blank"></a>
+                <a href="https://www.github.com/karaluton" class="footer__link -github" target="_blank"></a>
+            <div>
+        </footer>
     </div>
-    <footer class="footer" role="contentinfo" data-ref="footer">
-        <div class="footer__socials">
-            <a href="https://twitter.com/karaluton" class="footer__link -twitter" target="_blank"></a>
-            <a href="https://instagram.com/karaluton" class="footer__link -instagram" target="_blank"></a>}
-            <a href="https://www.linkedin.com/in/karaluton" class="footer__link -linkedin" target="_blank"></a>
-            <a href="https://www.github.com/karaluton" class="footer__link -github" target="_blank"></a>
-        <div>
-    </footer>
     <script src="/assets/scripts/app.bundle.js"></script>
 </body>
 </html>
