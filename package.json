@@ -17,7 +17,7 @@
     "ie > 9"
   ],
   "config": {
-    "root": "public",
+    "root": "public_html",
     "source": "source",
     "build": "build",
     "tasks": "build/tasks"

@@ -1,0 +1,270 @@
+.not-found {
+    background: $primary;
+    height: 100vh;
+    &__hero {
+        background: none;
+        display: block;
+        height: 420px;
+        margin: auto;
+        padding-top: 5%;
+        position: relative;
+        width: 800px;
+    }
+    &__heading {
+        color: $darkGray;
+        font-family: 'Ultra', serif;
+        font-size: 30rem;
+        text-align: center;
+    }
+}
+
+.dog-head {
+    background: $dog-primary;
+    border-bottom-left-radius: 100px;
+    height: 23%;
+    left: 30%;
+    position: absolute;
+    top: 37%;
+    width: 18.5%;
+}
+
+.nose {
+    background: $black;
+    border-radius: 50%;
+    height: 15%;
+    left: -3%;
+    position: absolute;
+    top: -8%;
+    width: 10%;
+}
+
+.head-spot {
+    background: $dog-secondary;
+    border-radius: 50%;
+    height: 50%;
+    left: 55%;
+    position: absolute;
+    top: 12.5%;
+    width: 35%;
+}
+
+.eye {
+    background: $black;
+    border-radius: 50%;
+    height: 35%;
+    left: 30%;
+    position: absolute;
+    top: 15%;
+    width: 35%;
+}
+
+.pupil {
+    background: $white;
+    border-radius: 50%;
+    height: 40%;
+    left: 20%;
+    position: absolute;
+    top: 15%;
+    width: 40%;
+}
+
+.ear-right {
+    background: $dog-primary;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    height: 25%;
+    left: 90%;
+    position: absolute;
+    top: -25%;
+    width: 10%;
+}
+
+.ear-left {
+    background: $dog-secondary;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 5px;
+    height: 25%;
+    left: 80%;
+    position: absolute;
+    top: -25%;
+    width: 10%;
+}
+
+.smile {
+    background: $dog-primary;
+    border-left: 2px solid $secondary;
+    border-top: 1px solid $secondary;
+    border-top-left-radius: 45px;
+    height: 25%;
+    left: 8%;
+    position: absolute;
+    top: 85%;
+    transform: rotate(180deg);
+    transform-origin: 100% 0%;
+    width: 17%;
+}
+
+.tongue {
+    animation: pant 0.3s infinite;
+    background: #f38f31;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+    height: 30%;
+    left: 40%;
+    position: absolute;
+    top: -70%;
+    width: 50%;
+}
+
+.dog-body {
+    background: $dog-primary;
+    border-bottom-left-radius: 100px;
+    height: 25%;
+    left: 44%;
+    position: absolute;
+    top: 56.5%;
+    width: 25.5%;
+}
+
+.body-spot {
+    background: $dog-secondary;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    height: 30%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 30%;
+}
+
+.tail {
+    animation: wag 0.25s infinite;
+    background: $dog-primary;
+    // -webkit-clip-path: polygon(50% 0%, 28% 100%, 72% 100%);
+    clip-path: polygon(50% 0%, 28% 100%, 72% 100%);
+    height: 30%;
+    left: 89%;
+    position: absolute;
+    top: -20%;
+    transform: rotate(25deg);
+    width: 20%;
+}
+
+.leg1 {
+    background: $dog-primary;
+    height: 50%;
+    left: 20%;
+    position: absolute;
+    top: 80%;
+    width: 10%;
+}
+
+.leg2 {
+    background: $dog-primary;
+    height: 40%;
+    left: 32.5%;
+    position: absolute;
+    top: 90%;
+    width: 10%;
+}
+
+.leg3 {
+    background: $dog-secondary;
+    height: 30%;
+    left: 75%;
+    position: absolute;
+    top: 100%;
+    width: 10%;
+}
+
+.leg4 {
+    background: $dog-primary;
+    height: 50%;
+    left: 90%;
+    position: absolute;
+    top: 80%;
+    width: 10%;
+}
+
+.foot1 {
+    background: $dog-primary;
+    // -webkit-clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    height: 60%;
+    left: -40%;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.foot2 {
+    background: $dog-primary;
+    // -webkit-clip-path: polygon(0 38%, 0 100%, 100% 100%);
+    clip-path: polygon(0 38%, 0 100%, 100% 100%);
+    height: 60%;
+    position: absolute;
+    right: -40%;
+    top: 40%;
+    width: 100%;
+}
+
+.foot3 {
+    background: $dog-secondary;
+    // -webkit-clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    height: 60%;
+    left: -40%;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.foot4 {
+    background: $dog-primary;
+    // -webkit-clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 37%, 0 100%, 100% 100%);
+    height: 60%;
+    left: -40%;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+// CSS Animations
+@keyframes pant {
+    0% {
+        height: 3vmin;
+        top: -3.2vmin;
+    }
+    50% {
+        height: 2vmin;
+        top: -2.2vmin;
+    }
+    100% {
+        height: 3vmin;
+        top: -3.2vmin;
+    }
+}
+
+@keyframes wag {
+    0% {
+        // -webkit-clip-path: polygon(50% 0%, 28% 100%, 72% 100%);
+        clip-path: polygon(50% 0%, 28% 100%, 72% 100%);
+    }
+    25% {
+        // -webkit-clip-path: polygon(40% 0, 28% 100%, 72% 100%);
+        clip-path: polygon(40% 0, 28% 100%, 72% 100%);
+    }
+    50% {
+        // -webkit-clip-path: polygon(60% 1%, 28% 100%, 72% 100%);
+        clip-path: polygon(60% 1%, 28% 100%, 72% 100%);
+    }
+    75% {
+        // -webkit-clip-path: polygon(48% 1%, 28% 100%, 72% 100%);
+        clip-path: polygon(48% 1%, 28% 100%, 72% 100%);
+    }
+    100% {
+        // -webkit-clip-path: polygon(50% 0%, 28% 100%, 72% 100%);
+        clip-path: polygon(50% 0%, 28% 100%, 72% 100%);
+    }
+}

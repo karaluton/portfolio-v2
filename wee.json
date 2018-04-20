@@ -1,6 +1,6 @@
 {
     "paths": {
-        "root": "public",
+        "root": "public_html",
         "assets": "assets",
         "source": "source",
         "build": "build"
@@ -51,8 +51,8 @@
         "host": "auto",
         "port": 9000,
         "https": true,
-        "proxy": "https://wee.dev",
-        "static": true,
+        "proxy": "https://portfolio.dev",
+        "static": false,
         "reload": {
             "enable": true,
             "watch": {
