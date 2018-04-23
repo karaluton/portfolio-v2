@@ -9,11 +9,6 @@
         padding-top: 5%;
         position: relative;
         width: 225px;
-        &:hover {
-            .tail {
-                animation: none;
-            }
-        }
     }
     &__heading {
         color: $darkGray;
