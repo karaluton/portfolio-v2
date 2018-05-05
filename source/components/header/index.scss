@@ -32,6 +32,7 @@
     }
     &__link {
         color: $darkGray;
+        font-size: 1.25rem;
         font-weight: bold;
         text-transform: uppercase;
         transition: all 0.25s;
@@ -43,5 +44,13 @@
         @include flexContainer($justify: center, $align: center);
         flex-grow: 1;
         list-style: none;
+    }
+}
+
+@tablet {
+    .header {
+        &__link {
+            font-size: 1.5rem;
+        }
     }
 }
