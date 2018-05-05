@@ -14,24 +14,18 @@
         width: 100%;
         z-index: 2;
         .header__logo {
+            display: block;
             max-width: 50rem;
-        }
-        .header__link {
-            &:hover {
-                color: $black;
-            }
         }
     }
     &__nav {
         @include flexContainer();
     }
     &__logo {
-        color: $darkGray;
-        font-family: $logoFont;
-        font-size: 3rem;
         max-width: 0;
         overflow: hidden;
         transition: all 0.25s;
+        width: 5rem;
         &:hover {
             color: $darkGray;
         }

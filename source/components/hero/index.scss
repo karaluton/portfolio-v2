@@ -31,9 +31,7 @@
         z-index: 2;
     }
     &__logo {
-        color: lighten($primary, 10%);
-        font-family: $logoFont;
-        font-size: 7rem;
+        @include size(12rem, 10rem);
     }
     &__headline {
         color: $darkGray;
@@ -63,7 +61,7 @@
             color: $darkGray;
         }
         &__headline {
-            margin: 5rem 0;
+            margin: 3rem 0 5rem;
         }
     }
 }
