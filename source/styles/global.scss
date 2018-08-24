@@ -23,83 +23,22 @@
 body {
     @include textSharpen();
 
-    color: $black;
+    color: $darkGray;
     font-family: $baseFont;
     font-size: $baseFontSize;
     margin: 0;
 }
 
 a {
+    color: $darkGray;
     transition: all .1s ease .1s;
 }
 
 p {
-    color: $black;
+    color: $darkGray;
     font-family: $baseFont;
     font-size: $baseFontSize;
     line-height: 1.2em;
-}
-
-/* ------------------------------------ *\
-    # Form Elements
-\* ------------------------------------ */
-
-.select {
-    appearance: none;
-    border: none;
-    color: $black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    padding: 0 0 0 2.8rem;
-    width: auto;
-}
-
-.select-wrapper {
-    position: relative;
-    transition: opacity 0.2s ease;
-    &:hover {
-        opacity: 0.5;
-    }
-    &__icon {
-        @include absolute($top: 0.6rem, $left: 1rem);
-
-        color: $primary;
-        cursor: pointer;
-        pointer-events: none;
-    }
-}
-
-.button {
-    background: transparent;
-    background-image: linear-gradient(to right, transparent 50%, $primary 50%);
-    background-size: 201% 100%;
-    border: 2px solid $primary;
-    border-radius: 5rem;
-    color: $white;
-    font-family: $headingFont;
-    font-size: 1.4rem;
-    padding: 1.4rem 3.2rem;
-    text-transform: uppercase;
-    transition: background-position .5s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
-    &.-colored {
-        background: $darkGray;
-        background-image: linear-gradient(to right, transparent 50%, $primary 50%);
-        background-size: 201% 100%;
-        border: 2px solid $darkGray;
-        transition: background-position .5s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease, border .5s ease;
-        &:hover {
-            background-color: $primary;
-            background-position: -100% 100%;
-            border: 2px solid $primary;
-            color: rgba(255, 255, 255, 1);
-        }
-    }
-    &:hover {
-        background-color: $primary;
-        background-position: -100% 100%;
-        color: rgba(255, 255, 255, 1);
-    }
 }
 
 .u-hide {
@@ -116,20 +55,13 @@ p {
     # Keyframes
 \* ------------------------------------ */
 
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        left: -20rem;
+    }
     100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-10px);
-    }
-
-    60% {
-        transform: translateY(-5px);
+        opacity: 1;
+        left: 0;
     }
 }

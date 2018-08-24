@@ -1,11 +1,5 @@
 @import '~wee-core/styles/variables.scss';
 
-@font-face {
-    font-family: 'Currency';
-    font-style: normal;
-    src: url('../fonts/CURRENCY_REG.ttf');
-}
-
 //------------------------------------*\
 //  # Colors
 //------------------------------------*/
@@ -24,9 +18,10 @@ $dog-secondary: #D1AE63;
 //------------------------------------*/
 
 $baseColor: $black;
-$baseFont: 'Roboto', sans-serif;
+$baseFont: 'Montserrat  ', sans-serif;
 $baseFontSize: 1.7rem;
 $baseFontWeight: normal;
+$bumperPadding: 2.6rem;
 
 //------------------------------------*\
 //  # Logo
