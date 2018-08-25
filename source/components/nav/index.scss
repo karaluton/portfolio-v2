@@ -30,19 +30,6 @@
     &:hover {
         opacity: .7;
     }
-
-    &.-active {
-        .nav-hamburger__top {
-            transform: translateY(1.1rem) translateX(0) rotate(45deg);
-        }
-        .nav-hamburger__middle {
-            opacity: 0;
-        }
-        .nav-hamburger__bottom {
-            transform: translateY(-1.1rem) translateX(0) rotate(-45deg);
-        }
-    }
-
     &__top,
     &__middle,
     &__bottom {
@@ -56,13 +43,22 @@
         transition: all .35s ease;
         width: 100%;
     }
-
     &__middle {
         top: 1.1rem;
     }
-
     &__bottom {
         top: 2.2rem;
+    }
+    &.-active {
+        .nav-hamburger__top {
+            transform: translateY(1.1rem) translateX(0) rotate(45deg);
+        }
+        .nav-hamburger__middle {
+            opacity: 0;
+        }
+        .nav-hamburger__bottom {
+            transform: translateY(-1.1rem) translateX(0) rotate(-45deg);
+        }
     }
 }
 
@@ -87,7 +83,6 @@
             margin-top: 1.5rem;
         }
     }
-
     &.-open {
         animation: grow .5s ease forwards;
         height: 24.7rem;
@@ -115,6 +110,7 @@
 
     .nav {
         align-items: center;
+        animation: none;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
@@ -124,8 +120,8 @@
             text-transform: uppercase;
         }
         &__logo {
-            position: initial;
             left: initial;
+            position: initial;
             top: initial;
             transform: none;
         }
@@ -145,6 +141,29 @@
             grid-row: 1;
             height: 8.3rem;
             justify-self: center;
+        }
+        &__item {
+            position: relative;
+
+            &::before {
+                background-color: $darkGray;
+                bottom: 0;
+                content: '';
+                height: 0.1rem;
+                left: 0;
+                position: absolute;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out 0s;
+                visibility: hidden;
+                width: 100%;
+            }
+
+            &:hover {
+                &::before {
+                    transform: scaleX(1);
+                    visibility: visible;
+                }
+            }
         }
     }
 }
