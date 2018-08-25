@@ -31,7 +31,13 @@ body {
 
 a {
     color: $darkGray;
-    transition: all .1s ease .1s;
+    transition: all .25s ease;
+
+    &:hover {
+        // TODO: Update fontweights
+        color: $darkGray;
+        font-weight: semibold;
+    }
 }
 
 p {

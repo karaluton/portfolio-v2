@@ -108,7 +108,43 @@
 }
 
 @tablet {
-    .nav-hamburger {
+    .nav-hamburger,
+    .nav-overlay {
         display: none;
+    }
+
+    .nav {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        &__item {
+            display: block;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        &__logo {
+            position: initial;
+            left: initial;
+            top: initial;
+            transform: none;
+        }
+    }
+}
+
+@desktop {
+    .nav {
+        grid-gap: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 20rem 1.5rem 1.5rem 1.5rem 1.5rem;
+        height: 100vh;
+        justify-items: left;
+        padding: 0 4.7rem;
+        width: 29rem;
+        &__logo {
+            grid-row: 1;
+            height: 8.3rem;
+            justify-self: center;
+        }
     }
 }
