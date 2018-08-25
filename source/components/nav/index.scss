@@ -67,15 +67,15 @@
 }
 
 .nav-overlay {
+    animation: shrink .5s ease;
     background: $primary;
-    display: none;
+    height: 0;
     left: 0;
     overflow: hidden;
     padding: 0 $bumperPadding;
     position: absolute;
     top: 9rem;
     width: 100%;
-
     &__item {
         font-size: 1.2rem;
         left: -20rem;
@@ -89,18 +89,19 @@
     }
 
     &.-open {
-        display: block;
+        animation: grow .5s ease forwards;
+        height: 24.7rem;
         .nav-overlay__item {
             animation: fadeInLeft .5s ease forwards;
-            animation-delay: .35s;
+            animation-delay: .25s;
             &:nth-of-type(2) {
-                animation-delay: .4s;
+                animation-delay: .35s;
             }
             &:nth-of-type(3) {
-                animation-delay: .45s;
+                animation-delay: .4s;
             }
             &:nth-of-type(4) {
-                animation-delay: .5s;
+                animation-delay: .45s;
             }
         }
     }
