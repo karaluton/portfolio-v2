@@ -14,6 +14,9 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
+    &__social {
+        display: none;
+    }
 }
 
 // TODO: Adjust height of hamburger
@@ -132,7 +135,7 @@
     .nav {
         grid-gap: 4rem;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 20rem 1.5rem 1.5rem 1.5rem 1.5rem;
+        grid-template-rows: 20rem 1.5rem 1.5rem 1.5rem 1.5rem 12rem;
         height: 100vh;
         justify-items: left;
         padding: 0 4.7rem;
@@ -158,11 +161,26 @@
                 width: 100%;
             }
 
-            &:hover {
+            &:hover,
+            &:focus {
                 &::before {
                     transform: scaleX(1);
                     visibility: visible;
                 }
+            }
+        }
+        &__social {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 16.2rem;
+        }
+        &__social-item {
+            display: block;
+            height: 1.7rem;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.04);
             }
         }
     }
