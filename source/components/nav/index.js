@@ -24,6 +24,7 @@ export default new RouteHandler({
                 callback() {
                     if ($('.js-overlay').hasClass('-open')) {
                         $('.js-overlay').removeClass('-open');
+                        $('.js-toggle').removeClass('-active');
                     }
                     $events.off(false, 'toggle');
                 }
