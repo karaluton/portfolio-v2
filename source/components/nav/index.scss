@@ -110,8 +110,8 @@
         &__item {
             display: block;
             font-size: 1.2rem;
-            text-transform: uppercase;
             position: relative;
+            text-transform: uppercase;
 
             &::before {
                 background-color: $darkGray;
@@ -151,7 +151,7 @@
         height: 100vh;
         justify-items: left;
         padding: 0 4.7rem;
-        width: 29rem;
+        position: relative;
         &__logo {
             grid-row: 1;
             height: 8.3rem;

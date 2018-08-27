@@ -1,0 +1,25 @@
+.app {
+	display: grid;
+	grid-template-areas:
+		'nav'
+		'main';
+	grid-template-rows: 9rem 1fr;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.main {
+	grid-area: main;
+}
+
+@desktop {
+	.app {
+		grid-template-areas:
+			'nav main'
+			'nav main';
+		grid-template-columns: 29rem 1fr;
+		grid-template-rows: 100vh;
+	}
+}
