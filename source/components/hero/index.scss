@@ -1,0 +1,45 @@
+// TODO: Adjust font weights
+.hero {
+    height: 14.1rem;
+    position: relative;
+    z-index: -1;
+
+    &::after {
+        background: $black;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: .1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    &__image {
+        height: inherit;
+        object-fit: cover;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+    }
+    &__content {
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    &__title {
+        font-family: $headingFont;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: .3rem;
+    }
+    &__subtitle {
+        font-family: $secondaryFont;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-transform: lowercase;
+        margin-bottom: 0;
+    }
+}
