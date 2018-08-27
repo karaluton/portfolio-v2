@@ -10,16 +10,16 @@ $darkGray: #484848;
 $black: #1c1b20;
 $white: #f5f5f5;
 
-$dog-primary: #F7DB97;
-$dog-secondary: #D1AE63;
+// $dog-primary: #F7DB97;
+// $dog-secondary: #D1AE63;
 
 //------------------------------------*\
 //  # Base
 //------------------------------------*/
 
 $baseColor: $black;
-$baseFont: 'Montserrat', sans-serif;
-$baseFontSize: 1.7rem;
+$baseFont: 'Georgia', serif;
+$baseFontSize: 1.5rem;
 $baseFontWeight: normal;
 $bumperPadding: 2.6rem;
 
@@ -38,6 +38,7 @@ $paragraphLineHeight: 1.65em;
 $headingFont: 'Montserrat', sans-serif;
 $headingFontWeight: 700;
 $headingLineHeight: 1.2em;
+$secondaryFont: 'Georgia', serif;
 
 $headingMarginBottom: 2rem;
 
