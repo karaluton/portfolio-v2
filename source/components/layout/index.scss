@@ -22,4 +22,9 @@
         grid-template-columns: 29rem 1fr;
         grid-template-rows: 100vh;
     }
+
+    .main {
+        height: 100vh;
+        overflow-y: auto;
+    }
 }

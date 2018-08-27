@@ -1,0 +1,40 @@
+.about {
+    margin: 15.4rem 0 3.5rem;
+    padding: 0 $bumperPadding;
+    text-align: center;
+    &__title {
+        font-size: 1.8rem;
+        font-weight: $semiBoldFontWeight;
+        margin-bottom: 0;
+    }
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3.5rem 0;
+    }
+    &__body {
+        margin-bottom: 0;
+    }
+}
+
+@tablet {
+    .about {
+        margin-top: 21.3rem;
+        padding: 0 9.3rem;
+        &__title {
+            font-size: 2rem;
+        }
+        &__icons {
+            margin: 3.5rem auto;
+            max-width: 32.4rem;
+        }
+    }
+}
+
+@desktop {
+    .about {
+        margin: 24.9rem auto 6.5rem;
+        max-width: 102.4rem;
+        padding: 0 7.5rem;
+    }
+}
