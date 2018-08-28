@@ -7,4 +7,8 @@ $router.map([
         path: '/',
         handler: [nav],
     },
+    {
+        path: '/portfolio',
+        handler: [nav],
+    },
 ]).run();

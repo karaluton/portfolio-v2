@@ -1,0 +1,70 @@
+.portfolio {
+    &__item {
+        background: $lightGray;
+        margin-bottom: 4rem;
+        padding: 3rem $bumperPadding 5rem;
+    }
+    &__image {
+        height: 19.6rem;
+        width: 100%;
+    }
+    &__title {
+        font-family: $headingFont;
+        font-size: 2rem;
+        font-weight: $boldFontWeight;
+        margin: 3.6rem 0 2rem;
+        padding-bottom: .4rem;
+        position: relative;
+
+        &::after {
+            border-bottom: 2px solid $primary;
+            bottom: 0;
+            content: '';
+            left: 0;
+            width: 3rem;
+            position: absolute;
+        }
+    }
+    &__info {
+        margin-bottom: 5rem;
+        list-style: none;
+    }
+    &__link {
+        cursor: pointer;
+        font-family: $headingFont;
+        font-weight: $semiBoldFontWeight;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+        padding: 1rem;
+        position: relative;
+        text-transform: uppercase;
+
+        &::after,
+        &::before {
+            border: 2px solid $darkGray;
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: transform .2s ease;
+        }
+
+        &::after {
+            transform: translate(3px, 3px);
+        }
+
+        &::before {
+            transform: translate(-3px, -3px);
+        }
+
+        &:hover,
+        &:focus {
+            &::before,
+            &::after {
+                transform: translate(0);
+            }
+        }
+    }
+}
