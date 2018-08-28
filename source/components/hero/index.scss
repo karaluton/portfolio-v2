@@ -1,8 +1,6 @@
-// TODO: Adjust font weights
 .hero {
     height: 14.1rem;
     position: relative;
-    z-index: -1;
 
     &::after {
         background: $black;
@@ -51,7 +49,7 @@
         position: absolute;
         transform: translateX(-50%);
         width: 14.6rem;
-        z-index: 2;
+        z-index: 1;
     }
 }
 
