@@ -1,12 +1,15 @@
 .portfolio {
-    &__item {
+    &__item-wrapper {
         background: $lightGray;
         margin-bottom: 4rem;
         padding: 3rem $bumperPadding 5rem;
     }
+    &__item {
+        display: grid;
+        justify-content: center;
+    }
     &__image {
         height: 19.6rem;
-        width: 100%;
     }
     &__title {
         font-family: $headingFont;
@@ -71,17 +74,17 @@
 
 @tablet {
     .portfolio {
-        &__item {
-            display: grid;
-            grid-gap: 5rem;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 6rem 7.5rem;
-
+        &__item-wrapper {
             &:nth-child(even) {
                 .portfolio__content {
                     grid-row: 1 / 2;
                 }
             }
+        }
+        &__item {
+            grid-gap: 5rem;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 6rem 7.5rem;
         }
         &__title {
             margin-bottom: 1.4rem;
@@ -89,6 +92,20 @@
         }
         &__info {
             margin-bottom: 3rem;
+        }
+    }
+}
+
+@desktop2 {
+    .portfolio {
+        &__item {
+            margin: 0 auto;
+            max-width: 100rem;
+        }
+
+        &__image {
+            height: 23.6rem;
+            object-fit: contain;
         }
     }
 }
