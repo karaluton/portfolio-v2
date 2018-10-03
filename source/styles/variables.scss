@@ -1,11 +1,5 @@
 @import '~wee-core/styles/variables.scss';
 
-@font-face {
-    font-family: 'Currency';
-    font-style: normal;
-    src: url('../fonts/CURRENCY_REG.ttf');
-}
-
 //------------------------------------*\
 //  # Colors
 //------------------------------------*/
@@ -16,23 +10,18 @@ $darkGray: #484848;
 $black: #1c1b20;
 $white: #f5f5f5;
 
-$dog-primary: #F7DB97;
-$dog-secondary: #D1AE63;
+// $dog-primary: #F7DB97;
+// $dog-secondary: #D1AE63;
 
 //------------------------------------*\
 //  # Base
 //------------------------------------*/
 
 $baseColor: $black;
-$baseFont: 'Roboto', sans-serif;
+$baseFont: 'Georgia', serif;
 $baseFontSize: 1.7rem;
 $baseFontWeight: normal;
-
-//------------------------------------*\
-//  # Logo
-//------------------------------------*/
-
-$logoFont: 'Currency', sans-serif;
+$bumperPadding: 2.6rem;
 
 //------------------------------------*\
 //  # Paragraphs
@@ -47,10 +36,13 @@ $paragraphLineHeight: 1.65em;
 //------------------------------------*/
 
 $headingFont: 'Montserrat', sans-serif;
-$headingFontWeight: 700;
+$headingFontWeight: 400;
 $headingLineHeight: 1.2em;
+$secondaryFont: 'Georgia', serif;
 
 $headingMarginBottom: 2rem;
+$boldFontWeight: 700;
+$semiBoldFontWeight: 600;
 
 $h1: 4.2rem; // font sizes
 $h2: 3.4rem;
@@ -58,20 +50,3 @@ $h3: 3.2rem;
 $h4: 3rem;
 $h5: 2.4rem;
 $h6: 1.5rem;
-
-//------------------------------------*\
-//  # Icons
-//------------------------------------*/
-
-$iconFont: icomoon;
-$iconSpinner: '\e97a';
-$iconPlus: '\ea0a';
-$iconDownArrow: '\ea43';
-$iconSearch: '\e986';
-
-// Socials
-$iconFacebook: '\ea90';
-$iconInstagram: '\ea92';
-$iconTwitter: '\ea96';
-$iconGithub: '\eab0';
-$iconLinkedIn: '\eaca';

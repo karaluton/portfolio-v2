@@ -1,11 +1,14 @@
 import $router from 'wee-routes';
 import './bootstrap';
-import header from '../components/header';
-import scroll from '../components/nav';
+import nav from '../components/nav';
 
 $router.map([
     {
         path: '/',
-        handler: [header, scroll],
+        handler: [nav],
+    },
+    {
+        path: '/portfolio',
+        handler: [nav],
     },
 ]).run();

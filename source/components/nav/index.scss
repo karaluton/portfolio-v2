@@ -1,0 +1,177 @@
+.nav {
+    background: $primary;
+    height: 9rem;
+    padding: 0 $bumperPadding;
+    position: fixed;
+    width: 100%;
+    &__item {
+        display: none;
+    }
+    &__logo {
+        height: 6.2rem;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__social {
+        display: none;
+    }
+}
+
+.nav-hamburger {
+    cursor: pointer;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+
+    &__item {
+        background: $darkGray;
+        border-radius: .4rem;
+        display: block;
+        height: .3rem;
+        margin: 0 0 .5rem;
+        transition: all .25s ease;
+    }
+
+    &.-active {
+        .nav-hamburger__item {
+            background: $darkGray;
+
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: .3rem;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: .5rem;
+            }
+        }
+    }
+}
+
+.nav-overlay {
+    animation: shrink .5s ease;
+    background: $primary;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 $bumperPadding;
+    position: absolute;
+    top: 9rem;
+    width: 100%;
+    &__item {
+        font-family: $headingFont;
+        font-size: 1.2rem;
+        left: -20rem;
+        margin-bottom: 3rem;
+        position: relative;
+        text-transform: uppercase;
+
+        &:first-child {
+            margin-top: 1.5rem;
+        }
+    }
+    &.-open {
+        animation: grow .5s ease forwards;
+        height: 24.7rem;
+        .nav-overlay__item {
+            animation: fadeInLeft .5s ease forwards;
+            animation-delay: .25s;
+            &:nth-of-type(2) {
+                animation-delay: .35s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: .4s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: .45s;
+            }
+        }
+    }
+}
+
+@tablet {
+    .nav-hamburger,
+    .nav-overlay {
+        display: none;
+    }
+
+    .nav {
+        align-items: center;
+        animation: none;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        &__item {
+            display: block;
+            font-family: $headingFont;
+            font-size: 1.2rem;
+            position: relative;
+            text-transform: uppercase;
+
+            &::before {
+                background-color: $darkGray;
+                bottom: 0;
+                content: '';
+                height: 0.1rem;
+                left: 0;
+                position: absolute;
+                transform: scaleX(0);
+                transition: all 0.3s ease-in-out 0s;
+                visibility: hidden;
+                width: 100%;
+            }
+
+            &:hover,
+            &:focus {
+                &::before {
+                    transform: scaleX(1);
+                    visibility: visible;
+                }
+            }
+        }
+        &__logo {
+            left: initial;
+            position: initial;
+            top: initial;
+            transform: none;
+        }
+    }
+}
+
+@desktop {
+    .nav {
+        grid-gap: 4rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 20rem 1.5rem 1.5rem 1.5rem 1.5rem 12rem;
+        height: 100vh;
+        justify-items: left;
+        padding: 0 4.7rem;
+        position: relative;
+        &__logo {
+            grid-row: 1;
+            height: 8.3rem;
+            justify-self: center;
+        }
+        &__social {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 16.2rem;
+        }
+        &__social-item {
+            display: block;
+            height: 1.7rem;
+
+            &:hover,
+            &:focus {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

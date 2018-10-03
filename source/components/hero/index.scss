@@ -1,78 +1,82 @@
 .hero {
-    height: 96vh;
+    height: 14.1rem;
     position: relative;
-    width: 100%;
-    &__image-wrapper {
-        background: $primary;
-        clip-path: polygon(0 0, 100% 0, 100% 82%, 0 96%);
-        // TODO: see if needed
-        // webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 96%);
-        height: 100vh;
-        position: relative;
-        &::after {
-            @include absolute(0, 0);
 
-            background: $primary;
-            content: ' ';
-            height: 100%;
-            opacity: 0.7;
-            width: 100%;
-        }
+    &::after {
+        background: $black;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: .1;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     &__image {
-        display: none;
+        height: inherit;
+        object-fit: cover;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
     }
     &__content {
-        @include absolute($top: 50%, $left: 50%);
-
+        left: 50%;
+        position: absolute;
         text-align: center;
+        top: 50%;
         transform: translate(-50%, -50%);
-        width: 95%;
-        z-index: 2;
+        width: 100%;
     }
-    &__logo {
-        @include size(12rem, 10rem);
-    }
-    &__headline {
-        color: $darkGray;
+    &__title {
         font-family: $headingFont;
-        font-size: 3.8rem;
-        font-weight: $headingFontWeight;
-        margin: 3rem 0;
+        font-size: 3rem;
+        font-weight: $boldFontWeight;
+        margin-bottom: .3rem;
+    }
+    &__subtitle {
+        font-family: $secondaryFont;
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 0;
+        text-transform: lowercase;
+    }
+    &__headshot {
+        border-radius: 50%;
+        bottom: -80%;
+        height: 14.1rem;
+        left: 50%;
+        object-fit: cover;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 14.6rem;
+        z-index: 1;
     }
 }
 
 @tablet {
     .hero {
-        &__image {
-            display: block;
-            margin-left: 50%;
-            max-width: none;
-            min-height: 100%;
-            min-width: 100%;
-            position: relative;
-            top: 50%;
-            transform: translate(-50%, -50%);
+        height: 34rem;
+        &__title {
+            font-size: 4rem;
+            margin-bottom: .9rem;
         }
-        &__content {
-            width: 90%;
+        &__subtitle {
+            font-size: 2.5rem;
         }
-        &__logo {
-            color: $darkGray;
-        }
-        &__headline {
-            margin: 3rem 0 5rem;
+        &__headshot {
+            bottom: -50%;
+            height: 25.3rem;
+            width: 26.6rem;
         }
     }
 }
 
 @desktop {
     .hero {
-        &__content {
-            width: 70%;
-        }
-        &__headline {
-            font-size: 5.7rem;
+        &__headshot {
+            bottom: -65%;
+            height: 29.4rem;
+            width: 29rem;
         }
     }
 }

@@ -1,19 +1,34 @@
 import $ from 'wee-dom';
 import $events from 'wee-events';
-import { scrollToAnchor } from '../../scripts/helpers';
+import $screen from 'wee-screen';
 import { RouteHandler } from 'wee-routes';
 
-function scroll() {
-    $events.on('.js-anchor', 'click.scroll', (e, el) => {
-        scrollToAnchor($(el).attr('href'));
-
-        e.preventDefault();
+function navToggle() {
+    $events.on('.js-toggle', 'click.toggle', () => {
+        $('.js-toggle').toggleClass('-active');
+        $('.js-overlay').toggleClass('-open');
     });
 }
 
 export default new RouteHandler({
     init() {
-        scroll();
-    },
-    unload: 'scroll'
+        $screen.map([
+            {
+                max: 2,
+                callback() {
+                    navToggle();
+                }
+            },
+            {
+                min: 3,
+                callback() {
+                    if ($('.js-overlay').hasClass('-open')) {
+                        $('.js-overlay').removeClass('-open');
+                        $('.js-toggle').removeClass('-active');
+                    }
+                    $events.off(false, 'toggle');
+                }
+            }
+        ]);
+    }
 });

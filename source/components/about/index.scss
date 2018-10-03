@@ -1,56 +1,40 @@
-.about-me {
+.about {
+    margin: 15.4rem 0 3.5rem;
+    padding: 0 $bumperPadding;
     text-align: center;
-    &__content {
-        padding-bottom: 3rem;
-        padding-top: 3rem;
+    &__title {
+        font-size: 1.8rem;
+        font-weight: $semiBoldFontWeight;
+        margin-bottom: 0;
     }
-    &__container {
-        margin-top: 2rem;
+    &__icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3.5rem 0;
     }
-    &__item {
-        margin-bottom: 3rem;
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
-    &__heading {
-        font-family: $headingFont;
-        font-size: 2.4rem;
-        line-height: $headingLineHeight;
-        margin: 2rem 0;
+    &__body {
+        margin-bottom: 0;
     }
 }
 
 @tablet {
-    .about-me {
-        &__content {
-            padding-bottom: 5rem;
-            padding-top: 5rem;
+    .about {
+        margin-top: 21.3rem;
+        padding: 0 9.3rem;
+        &__title {
+            font-size: 2rem;
         }
-        &__container {
-            display: grid;
-            grid-gap: 3rem;
-            grid-template-columns: repeat(3, 1fr);
-            margin-top: 5rem;
-        }
-        &__heading {
-            margin: 1rem 0;
+        &__icons {
+            margin: 3.5rem auto;
+            max-width: 32.4rem;
         }
     }
 }
 
 @desktop {
-    .about-me {
-        &__content {
-            padding-bottom: 7rem;
-            padding-top: 7rem;
-        }
-        &__image {
-            height: 9rem;
-            width: 10rem;
-        }
-        &__heading {
-            margin: 2rem 0;
-        }
+    .about {
+        margin: 24.9rem auto 6.5rem;
+        max-width: 102.4rem;
+        padding: 0 7.5rem;
     }
 }
